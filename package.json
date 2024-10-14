@@ -1,0 +1,13 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "scripts": {
+    "install-client": "cd frontend && npm install",
+    "install-server": "cd backend && npm install",
+    "start-client": "cd frontend && npm start",
+    "start-server": "cd backend && npm start",
+    "build-client": "cd frontend && npm run build",
+    "build": "npm run install-frontend && npm run install-backend"
+  }
+
+}
