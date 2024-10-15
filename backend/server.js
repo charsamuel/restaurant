@@ -10,11 +10,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 5173;
+const PORT = process.env.PORT || 4000;
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:5174', 
+  origin: 'http://localhost:5173', 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
   credentials: true, 
 }));
