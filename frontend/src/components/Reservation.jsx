@@ -15,7 +15,7 @@ const ReservationForm = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/api/v1/reservation/send', {
+      const response = await fetch('https://restaurant-lgoi.onrender.com/api/v1/reservation/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
