@@ -1,22 +1,9 @@
 {
-  "name": "restaurant",
-  "version": "1.0.0",
   "scripts": {
     "install-frontend": "cd frontend && npm install",
     "install-backend": "cd backend && npm install",
     "build": "npm run install-frontend && npm run install-backend && cd frontend && npm run build",
-    "start-client": "cd frontend && npm start",
-    "start-backend": "cd backend && npm start",
-    "start": "cd frontend && npm start && cd ../backend && npm start" 
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.4.9"
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "start": "concurrently \"cd frontend && npm run start\" \"cd backend && npm run start\""
   }
 }
