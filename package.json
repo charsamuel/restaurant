@@ -5,5 +5,8 @@
     "build": "npm run install-frontend && npm run install-backend && cd frontend && npm run build",
     "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
     "start": "concurrently \"cd frontend && npm run start\" \"cd backend && npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
   }
 }
