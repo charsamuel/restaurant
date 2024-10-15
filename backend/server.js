@@ -3,6 +3,11 @@ import cors from 'cors';
 import { dbConnection } from './database/dbConnection.js'; // Update the path accordingly
 import send_reservation from './controller/reservation.js'; // Adjust the path if needed
 import path from 'path'; // Import path module
+import { fileURLToPath } from 'url'; // Import fileURLToPath from url module
+
+// Simulate __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 4000;
