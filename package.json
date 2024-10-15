@@ -1,15 +1,7 @@
 {
-  "name": "restaurant",
-  "version": "1.0.0",
   "scripts": {
     "install-frontend": "cd frontend && npm install",
     "install-backend": "cd backend && npm install",
-    "build": "cd frontend && npm run build",
-    "start-client": "cd frontend && npm start",
-    "start-backend": "cd backend && npm start",
-    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
-  },
-  "devDependencies": {
-    "concurrently": "^6.5.1"
+    "build": "npm run install-frontend && npm run install-backend && cd frontend && npm run build"
   }
 }
