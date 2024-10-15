@@ -28,7 +28,8 @@ dbConnection();
 app.post('/api/v1/reservation/send', send_reservation);
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
+
 
 // Route for root to serve the main HTML file
 app.get('/', (req, res) => {
